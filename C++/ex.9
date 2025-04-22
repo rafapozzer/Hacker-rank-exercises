@@ -1,0 +1,29 @@
+#include <cmath>  
+#include <cstdio>  
+#include <vector>  
+#include <iostream> 
+#include <algorithm>  
+using namespace std; 
+
+
+int main() {
+    int n, q, k, i, j, x, y;
+  
+    cin>>n>>q;
+    
+    vector<vector<int>> vet(n);
+    
+    for(i=0; i<n; i++){
+        cin>>k;
+        vet[i].resize(k);
+        for(j=0; j<k; j++){
+            cin>>vet[i][j];
+            
+        }   
+    }
+    
+    for(int c=0; c<n; c++){
+        cin>>x>>y;
+        cout<<vet[x][y]<<endl;
+    }
+}
