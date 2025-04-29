@@ -10,7 +10,7 @@ for(n = a; n <= b; n++){
 if (n>9) { 
 if (n%2==0) { 
 cout<<"even"<<endl; 
-} 
+}  
 if (n%2==1) { 
 cout<<"odd"<<endl; 
 } 
