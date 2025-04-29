@@ -9,7 +9,7 @@ int main()
 { 
 string n_temp; 
 getline(cin, n_temp); 
-int n = stoi(ltrim(rtrim(n_temp))); 
+int n = stoi(ltrim(rtrim(n_temp)));  
 cin>>n; 
 if (n>9){ 
 cout<<"Greater than 9"<<endl; 
