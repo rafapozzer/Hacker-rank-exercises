@@ -1,38 +1,37 @@
-#include <cmath> 
-#include <cstdio> 
-#include <vector> 
-#include <iostream> 
-#include <algorithm> 
-using namespace std; 
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
 
+ 
+int main() { 
+vector<int>v; 
+int x,size=v.size(); 
+int a,b,c; 
 
-int main() {  
-vector<int>v;  
-int x,size=v.size();  
-int a,b,c;  
+cin>>size; 
+for(int i=0; i<size;i++){ 
+cin>>x; 
+v.push_back(x); 
+} 
 
-cin>>size;  
+cin>>a;
+a=a-1;
+v.erase(v.begin()+a);
 
-for(int i=0; i<size;i++){  
-cin>>x;  
-v.push_back(x);  
-}  
+cin>>b>>c;
+b=b-1;
+c=c-1;
+v.erase(v.begin()+b,v.begin()+c);
 
-cin>>a; 
-a=a-1; 
-v.erase(v.begin()+a); 
+cout<<v.size()<<endl;
 
-cin>>b>>c; 
-b=b-1; 
-c=c-1; 
-v.erase(v.begin()+b,v.begin()+c); 
-
-cout<<v.size()<<endl; 
-
-for(int j=0; j<v.size(); j++){  
-int f = v[j];  
-cout<<f<<" ";  
-}  
+for(int j=0; j<v.size(); j++){ 
+int f = v[j]; 
+cout<<f<<" "; 
+} 
 
 return 0; 
 } 
